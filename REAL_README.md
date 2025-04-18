@@ -22,13 +22,13 @@ This keeps `ncat` **listening** on port `4444` for incoming alerts.
 ### **2. Run the PowerShell Script on Windows**
 Save the PowerShell script and execute it on the **Windows machines**:
 ```powershell
-powershell -ExecutionPolicy Bypass -File C:\Scripts\kay)send.ps1
+powershell -ExecutionPolicy Bypass -File C:\Scripts\kay_send.ps1
 ```
 
 ### **3. Automate with Task Scheduler**
 To run the script at boot:
 ```powershell
-schtasks /Create /TN "DefenderMonitor" /SC ONSTART /TR "powershell -ExecutionPolicy Bypass -File C:\Scripts\Monitor.ps1" /RU SYSTEM
+schtasks /Create /TN "DefenderMonitor" /SC ONSTART /TR "powershell -ExecutionPolicy Bypass -File C:\Scripts\kay_send.ps1" /RU SYSTEM
 ```
 
 ## **Requirements**
