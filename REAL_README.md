@@ -22,7 +22,7 @@ This keeps `ncat` **listening** on port `4444` for incoming alerts.
 ### **2. Run the PowerShell Script on Windows**
 Save the PowerShell script and execute it on the **Windows machines**:
 ```powershell
-powershell -ExecutionPolicy Bypass -File C:\Scripts\Monitor.ps1
+powershell -ExecutionPolicy Bypass -File C:\Scripts\kay)send.ps1
 ```
 
 ### **3. Automate with Task Scheduler**
@@ -34,7 +34,14 @@ schtasks /Create /TN "DefenderMonitor" /SC ONSTART /TR "powershell -ExecutionPol
 ## **Requirements**
 - Windows machines must have **PowerShell** enabled.
 - **Kali Linux** must have **`ncat` installed** (`sudo apt install nmap -y`).
-- - **Kali Linux** must have **`zenity` installed** (`sudo apt install senity -y`).
+```
+sudo apt install ncat -y
+```
+
+- **Kali Linux** must have **`zenity` installed** (`sudo apt install senity -y`).
+```
+sudo apt install zenity -y
+```
 - **Scripts must be saved in an accessible directory** (e.g., `C:\Scripts\`).
 - **Window Machine** must have ncat installed on it (https://nmap.org/ncat/) 
 
