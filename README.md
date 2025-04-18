@@ -1,4 +1,3 @@
-Here’s a short **GitHub README** write-up for your script:
 
 ---
 
